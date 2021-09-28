@@ -1,4 +1,4 @@
-pragma solidity 0.8.0;
+pragma solidity 0.8.8;
 
 // We first import some OpenZeppelin Contracts.
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";

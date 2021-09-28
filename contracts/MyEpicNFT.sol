@@ -13,13 +13,13 @@ contract MyEpicNFT is ERC721URIStorage {
 
   // This is our SVG code. All we need to change is the word that's displayed. Everything else stays the same.
   // So, we make a baseSvg variable here that all our NFTs can use.
-  string baseSvg = "<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 350 350'><style>.base { fill: white; font-family: serif; font-size: 24px; }</style><rect width='100%' height='100%' fill='black' /><text x='50%' y='50%' class='base' dominant-baseline='middle' text-anchor='middle'>";
+  string baseSvg = "<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 350 350'><style>.base { fill: black; font-family: serif; font-size: 24px; }</style><rect width='100%' height='100%' fill='lavender' /><text x='50%' y='50%' class='base' dominant-baseline='middle' text-anchor='center'>";
 
   // I create three arrays, each with their own theme of random words.
   // Pick some random funny words, names of anime characters, foods you like, whatever! 
-  string[] firstWords = ["YOUR_WORD", "YOUR_WORD", "YOUR_WORD", "YOUR_WORD", "YOUR_WORD", "YOUR_WORD"];
-  string[] secondWords = ["YOUR_WORD", "YOUR_WORD", "YOUR_WORD", "YOUR_WORD", "YOUR_WORD", "YOUR_WORD"];
-  string[] thirdWords = ["YOUR_WORD", "YOUR_WORD", "YOUR_WORD", "YOUR_WORD", "YOUR_WORD", "YOUR_WORD"];
+  string[] firstWords = ["Epic", "Yolo", "Rad", "Excellent", "WildAF", "Gnarly"];
+  string[] secondWords = ["Bike", "Jump", "Skateboard", "Motorcycle", "Scooter", "Unicycle"];
+  string[] thirdWords = ["HanSolo", "DarthVader", "LukeSkywalker", "Chewbacca", "R2D2", "BobaFett"];
 
   constructor() ERC721 ("SquareNFT", "SQUARE") {
     console.log("This is my NFT contract. Woah!");
